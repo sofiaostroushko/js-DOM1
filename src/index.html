@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор | Лабораторна №8</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <div class="top-line">
+      <span class="label">ЛАБОРАТОРНА №8</span>
+      <span class="subject">JavaScript DOM</span>
+    </div>
+
+    <header>
+      <div class="symbol">✦</div>
+      <h1>Калькулятор</h1>
+      <p>Прості обчислення — зручний результат.</p>
+    </header>
+
+    <section class="workspace">
+      <div class="input-group">
+        <label for="firstNumber">Перше число</label>
+        <input
+          type="text"
+          id="firstNumber"
+          inputmode="decimal"
+          placeholder="Наприклад, 12.5"
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="secondNumber">Друге число</label>
+        <input
+          type="text"
+          id="secondNumber"
+          inputmode="decimal"
+          placeholder="Наприклад, 3"
+          autocomplete="off"
+        >
+      </div>
+
+      <p class="section-title">Оберіть математичну дію</p>
+
+      <div class="operations">
+        <button type="button" id="add" title="Додавання">+</button>
+        <button type="button" id="subtract" title="Віднімання">−</button>
+        <button type="button" id="multiply" title="Множення">×</button>
+        <button type="button" id="divide" title="Ділення">÷</button>
+      </div>
+
+      <div class="result-box" aria-live="polite">
+        <span>РЕЗУЛЬТАТ</span>
+        <p id="result">—</p>
+      </div>
+
+      <p id="message" class="message" role="alert"></p>
+
+      <button type="button" id="clear" class="clear-button">
+        Очистити все
+      </button>
+    </section>
+
+    <footer>Створено для лабораторної роботи з DOM</footer>
+  </main>
+</body>
+</html>
